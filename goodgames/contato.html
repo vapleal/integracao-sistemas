@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Good Games </title>
+	<link rel="stylesheet" href="script/style.css" >
+</head>
+<body>
+	<div>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="quemSomos.html"> Quem somos </a></li>
+				<li><a href="produtos.html"> Produtos </a></li>
+				<li><a href="curiosidades.html"> Curiosidades </a></li>
+				<li><a href="contato.html"> Contato </a></li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<h1> Contato </h1>
+	</div>
+	<div id="formulario">
+		<form name="login" method="post" action="envia_email.php">
+			<font color="yellow" >
+			<fieldset>
+				<legend>
+					<label> Dados Pessoais </label>
+				</legend>
+				<div class="conteudo-form">
+				<table width="500">
+					<tr>
+						<td width="100"><label for="nome"> Nome: </label></td>
+						<td width="400"><input type="text" id="nome" name="nome" 
+							   maxlength="15" placeholder="Digite seu nome" /></td>
+					</tr>
+					<tr>
+						<td><label for="idade"> Idade: </label></td>
+						<td><input type="text" id="idade" name="idade"
+							   maxlength="8" placeholder="Digite sua idade" /></td>
+					<tr>
+					</tr>
+						<td><label for="email"> E-mail: </label></td>
+						<td><input type="text" id="email" name="email"
+							   maxlength="30" placeholder="Digite seu e-mail" /></td>
+					<tr>
+					</tr>
+						<td><label for="rua"> Rua: </label></td>
+						<td><input type="text" id="rua" name="rua" 
+							   maxlength="30" placeholder="Digite seu endereço." /></td>
+					<tr>
+					</tr>
+						<td><label for="estado"> Estado: </label></td>
+						<td><select id="estado" name="estado">
+							<option value="sp"> São Paulo </option>
+							<option value="mg"> Minas Gerais </option>
+						</select></td>
+					<tr>
+					</tr>
+						<td><label for="cidade"> Cidade: </label></td>
+						<td><select id="cidade" name="cidade">
+							<option value="RP"> Ribeirão Preto </option>
+							<option value="SR"> Serrana </option>
+						</select></td>
+					<tr>
+					</tr>
+				</table>
+					<label for="sexo"> Sexo: </label>
+					</br>
+					<input type="radio" id="sexo" name="sexo" value="Masculino" checked="checked" />
+					<label for="masculino"> Masculino </label>
+					</br>
+					<input type="radio" id="sexo" name="sexo" value="Feminino" />
+					<label for="feminino"> Feminino </label>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<legend>
+					<label for="escolariodade"> Nível de escolaridade: </label>
+				</legend>
+				<div class="conteudo-form">
+					</br>
+					<input type="radio" id="escolaridade" 
+					   name="escolaridade" value="fundamental" checked="checked" />
+					<label for="fundamental"> Ensino Fundamental </label>
+					</br>
+					<input type="radio" id="escolaridade" 
+					   name="escolaridade" value="medio" />
+					<label for="medio"> Ensino Médio </label>
+					</br>
+					<input type="radio" id="escolaridade"
+					   name="escolaridade" value="superior" />
+					<label for="superior" > Ensino Superior </label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+			<legend>
+				<label for="console"> Consoles: </label>
+			</legend>
+			<div class="conteudo-form">
+				<input type="checkbox" id="sp1" name="sp1"
+					value="sp1" /> 
+				<label for="sp1"> Play Station 1 </label>
+				</br>
+				<input type="checkbox" id="sp2" name="sp2"
+					value="sp2" /> 
+				<label for="sp2"> Play Station 2 </label>
+				</br>
+				<input type="checkbox" id="sp3" name="sp3"
+					value="sp3" /> 
+				<label for="sp3"> Play Station 3 </label>
+				</br>
+				<input type="checkbox" id="n64" name="n64" 
+					value="n64" />
+				<label for="n64"> Nintendo 64 </label>
+				</br>
+				<input type="checkbox" id="nwi" name="nwi" 
+					value="nwi" />
+				<label for="nwi"> Nintendo Wii </label>
+				</br>
+				<input type="checkbox" id="nwu" name="nwu" 
+					value="nwu" />
+				<label for="nwu"> Nintendo Wii-U </label>
+			</div>
+			</fieldset>
+			<fieldset>
+				<div class="conteudo-form">
+					<input type="submit" id="enviar" name="enviar"
+						   value="Enviar Formulário" class="bt-enviar" />	
+					<input type="reset" id="limpar" name="limpar"
+					   value="Cancelar" class="bt-cancelar" />
+				</div>
+			</fieldset>
+		</font>
+		</form>
+	</div>
+</body>
+</html>

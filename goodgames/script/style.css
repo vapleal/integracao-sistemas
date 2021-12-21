@@ -1,0 +1,310 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: black;
+}
+h1, h2, h3, fieldset, label {
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+nav a:hover{
+	color: red;
+	background-color: grey;
+	height: 20px;
+}
+nav a:active{
+	color: blue;
+}
+ul li {
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.menu {
+	font-family: "verdana";
+	color: white;
+	font-size: 15px;
+	height: 20px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: black;
+}
+fieldset {
+	width: 600px;
+	position: relative;
+	left: 20px;
+	border-radius: 15px;
+	top: 10px;
+	margin-bottom: 10px;
+	border: 3px solid;
+}
+.conteudo-form{
+	position: relative;
+	left: 15px;
+}
+.bt-enviar{
+	height: 25px;
+	background-color: blue;
+	font-size: 13px;
+	font-weight: bold;
+	border: 0px;
+	color: white;
+}
+.bt-enviar:hover{
+	background-color: lightblue;
+}
+.bt-cancelar{
+	height: 25px;
+	background-color: red;
+	font-size: 13px;
+	font-weight: bold;
+	border: 0px;
+	color: white;
+}
+.bt-cancelar:hover{
+	background-color: magenta;
+}
+input[type=text]{
+	background-color: lightyellow;
+}
+.content{
+	width: 900px;
+	margin: auto;
+	position: relative;
+}
+.col1{
+	width: 100%;
+	margin: auto;
+	float: left;
+}
+.col2{
+	width: 50%;
+	float: left;
+	margin: auto;
+}
+.col3{
+	position: relative;
+	width: 33.33%;
+	float: left;
+	margin: auto;
+}
+.col4{
+	width: 25%;
+	float: left;
+	margin: auto;
+}
+.col5{
+	width: 75%;
+	float: left;
+	margin: auto;
+}
+.logo-titulo{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	margin-left: 20px;
+}
+.logo-desc{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	color: white;
+	margin-left: 20px;
+}
+.texto1{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	color: white;
+	margin-left: 5px;
+}
+/* Estilo da janela Modal */
+.modal{
+	position: absolute;
+	margin: auto;
+	display: none;
+	background-color: rgba(255,255,255,0.7);
+	width: 100%;
+	height: 100%;
+}
+.mensagem{
+	position: relative;
+	margin: auto;
+	padding: 30px;
+	width: 300px;
+	min-height: 150px;
+	background-color: black;
+	border: 6px solid white;
+	box-shadow: 0 0 0 6px black; /*X Y px cor*/
+	border-radius: 25px;
+	margin-top: 150px;
+}
+.video{
+	width: 600px;
+}
+@keyframes mensagem{
+	from{
+		opacity: 0;
+		transform: translateY(-150px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.anima .mensagem{
+	animation: mensagem 2s;
+}
+/* fim modal */
+.btn-janela{
+	float: right;
+	position: relative;
+	top: -50px;
+	right: -50px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+}
+.btn{
+	height: 35px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+}
+.btn-font{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn-cancel{
+	background-color: red;	
+}
+.btn-cancel:hover{
+	background-color: rgb(255, 80, 80);
+}
+.btn-cancel:active{
+	background-color: rgb(150, 0, 0);
+}
+.btn-ok{
+	background-color: blue;
+}
+.btn-ok:hover{
+	background-color: rgb(80, 80, 255);
+}
+.btn-ok:active{
+	background-color: rgb(0,0,150);
+}
+input[type=text]{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	width: 200px;
+}
+input[type=text]:focus{
+	box-shadow: 0 0 6px 4px rgb(80, 80, 255);
+	background-color: rgb(255, 240, 130);
+}
+audio {
+	width: 100%;
+}
+/* chamada para anuncio */
+.col3 .box{
+	position: absolute;
+	width: 100%;
+	background-color: white;
+	border: 1px solid black;
+	bottom: 0;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	height: 20px;
+	transition: 1s linear 0.1s;
+	overflow: hidden;
+}
+.col3 .box:hover{
+	bottom: 0;
+	height: 80px;
+	opacity: .5;
+}
+
+.col3 .box p:first-line {
+	font-weight: bold;
+	color: red;
+}
+.col3 .box a{
+	font-size: 15px;
+	font-weight: bold;
+	color: darkblue;
+}
+.col3 .box a:hover{
+	color: red;
+}
+/* fim */
+/* banner */
+.banner{
+	position: relative;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: aqua;
+	font-size: 60px;
+	overflow: hidden;
+}
+.banner .navega{
+	position: absolute;
+	background-color: white;
+	top: 150px;
+	opacity: .5;
+}
+.banner .navega:hover{
+	color: red;
+	cursor: pointer;
+}
+.banner .direita {
+	right: 0;
+}
+.banner .radio{
+	position: absolute;
+	bottom: 0;
+	opacity: .6;
+	margin-left: 50%; /* moveu a margem ESQUERDA do conteúdo para o centro do container */
+	transform: translate(-50%, 0); /* translate (X, Y) -> moveu o conteúdo em -50% do seu próprio tamanho, colocando-o no centro */
+}
+.banner .informacao {
+	position: absolute;
+	background-color: aquamarine;
+	bottom: 60px;
+	height: 50px;
+	width: 100%;
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow:  0 3px 5px 3px rgb(3, 97, 160);
+	opacity: .6;
+	/* exibição do tipo FLEXBOX, torna os itens
+	 mais facilmente posicionados na tela */
+	display: flex;
+	align-items: center;
+}
+.banner:hover .informacao {
+	box-shadow:  0 3px 5px 4px rgb(255, 240, 130);
+	opacity: .8;
+}
+.banner .informacao p {
+	color: black;
+	font-size: 20px;
+	/* ocupa todo o espaço da div e alinha o 
+	texto ao centro */
+	text-align: center;
+	width: 100%;
+}
+/* fim */
+.corFundo {
+	background-color: red;
+}
+/*
+btn-ok -> azul, 35px altura, bordas arredondadas
+btn-cancel -> vermelho, 35px altura, bordas arredondadas
+*/
+
