@@ -1,6 +1,6 @@
 # integracao-sistemas
 Modelo de integração entre sistemas web e desktop para estudo. <br>
-Projeeto desenvolvido em C#, PHP, HTML, CSS, Javascript com bancos de  dados MySQL e SQL Server
+Projeto desenvolvido em C#, PHP, HTML, CSS, Javascript com bancos de  dados MySQL e SQL Server
 
 # Utilização:
 1 - Restaure os bancos de dados da pasta suporte: site -> mysql, desktop -> sql server local db <br>
